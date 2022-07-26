@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
 img{
-    width: 550px;
+    width: 540px;
 }
 h1{
     color: #3f3a64;

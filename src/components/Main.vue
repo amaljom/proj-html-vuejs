@@ -3,14 +3,18 @@
   <div>
     <!-- BUILD YOUR TEAM -->
     <BuildYourTeam />
+    <!-- ConstructCareer -->
+    <ConstructCareer />
   </div>
 </template>
 
 <script>
 import BuildYourTeam from './BuildYourTeam'
+import ConstructCareer from './ConstructCareer'
 export default {
     components:{
-        BuildYourTeam
+        BuildYourTeam,
+        ConstructCareer
     }
 }
 </script>

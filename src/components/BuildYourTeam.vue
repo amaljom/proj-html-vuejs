@@ -4,7 +4,7 @@
         <p>START LEARNING CODING LANGUAGES</p>
     </div>
     <div class="d-flex justify-content-center">
-        <h1 class="font-w-h1">BUIL YOUR DREAM&nbsp;</h1>
+        <h1 class="font-w-h1">Build your dream&nbsp;</h1>
         <h1>TODAY</h1>
     </div>
     <!-- inserisco i 4 component dinamicamente -->
