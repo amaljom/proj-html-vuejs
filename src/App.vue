@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <Main />
   </div>
 </template>
 
@@ -27,7 +28,7 @@ export default {
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(206, 206, 182);
+  background-color: rgb(255, 255, 255);
   font-family: 'Fredoka One', cursive;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Mukta', sans-serif;

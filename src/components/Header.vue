@@ -1,7 +1,7 @@
 <template>
   <header>
-        <div class="nav div-position">
-            <div class="nav d-flex justify-content-between align-items-center">
+        <div class="card-contenitore div-position">
+            <div class=" d-flex justify-content-between align-items-center">
                 <div> <img class="w-50" src="../assets/dark-logo.png" alt=""> </div>
                 
                 <div class="d-flex align-items-center">
@@ -68,21 +68,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card-contenitore{
+    width: 1250px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
 header{
     background-color: #e9e6e3;
 }
-.img-container{
-    width: 100%;
-    position: relative;
-}
-.img-backgorund{
-    width: 100%;
-    height: 400px;
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    position: absolute;
-    bottom: 0;
-}
+
 .input-dec{
     padding: 12px 10px;
     background-color: white;
@@ -101,16 +95,24 @@ ul li{
     padding: 25px ;
     color: #3f3a64;
 }
-.nav{
-    width: 1250px;
-    margin: 0 auto;
-    padding-top: 10px;
-}
+
 .div-position{
     position: relative;
     z-index: 99;
 }
 .font-icon{
     font-size:10px;
+}
+.img-container{
+    width: 100%;
+    position: relative;
+}
+.img-backgorund{
+    width: 100%;
+    height: 400px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    position: absolute;
+    bottom: 0;
 }
 </style>
