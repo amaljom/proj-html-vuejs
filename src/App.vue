@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <Header />
   </div>
 </template>
 
@@ -21,4 +21,7 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
+body{
+  background-color: rgb(206, 206, 182);
+}
 </style>
