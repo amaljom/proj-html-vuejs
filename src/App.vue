@@ -21,7 +21,18 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   background-color: rgb(206, 206, 182);
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 </style>
