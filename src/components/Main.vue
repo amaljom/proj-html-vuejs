@@ -9,6 +9,8 @@
     <ResultsObtained />
     <!-- Latest courses -->
     <LatestCourses />
+    <!-- section with two components with images -->
+    <LearnSection />
   </div>
 </template>
 
@@ -16,13 +18,15 @@
 import BuildYourTeam from './BuildYourTeam'
 import ConstructCareer from './ConstructCareer'
 import ResultsObtained from './ResultsObtained'
-import LatestCourses from './LatestCourses.vue'
+import LatestCourses from './LatestCourses'
+import LearnSection from './LearnSection'
 export default {
     components:{
         BuildYourTeam,
         ConstructCareer,
         ResultsObtained,
-        LatestCourses
+        LatestCourses,
+        LearnSection
     }
 }
 </script>
