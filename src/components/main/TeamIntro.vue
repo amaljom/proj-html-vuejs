@@ -36,19 +36,19 @@ export default {
                     img:'testimonial-avata-02.jpg',
                     info:'I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.',
                     name:'MINO HOLLACE',
-                    profession:'/Freelancer'
+                    profession:'/ Freelancer'
                 },
                 {
                     img:'testimonial-avata-01.jpg',
                     info:'MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
                     name:'MADLEY PONDOR',
-                    profession:'/IT Specialst'
+                    profession:'/ IT Specialst'
                 },
                 {
                     img:'testimonial-avata-04.jpg',
                     info:'I am happy with their arrangerment of lessons and subject. They reflect a scientific investigation.',
                     name:'LUVIC DUBBLE',
-                    profession:'/Private Tutor'
+                    profession:'/ Private Tutor'
                 }
             ]
         }

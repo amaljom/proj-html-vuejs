@@ -15,6 +15,8 @@
     <UpcomingEvents />
     <!-- team introduction -->
     <TeamIntro />
+    <!-- Final main section -->
+    <MainConclusion />
   </div>
 </template>
 
@@ -26,6 +28,7 @@ import LatestCourses from './LatestCourses'
 import LearnSection from './LearnSection'
 import UpcomingEvents from './UpcomingEvents'
 import TeamIntro from './TeamIntro'
+import MainConclusion from './MainConclusion'
 export default {
     components:{
         BuildYourTeam,
@@ -34,7 +37,8 @@ export default {
         LatestCourses,
         LearnSection,
         UpcomingEvents,
-        TeamIntro
+        TeamIntro,
+        MainConclusion
     }
 }
 </script>
