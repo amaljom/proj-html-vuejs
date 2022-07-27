@@ -44,6 +44,9 @@
         <a @click.prevent href="">View all courses&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
     </div>
   </div>
+  <div class="w-100">
+    <img class="wave" src="../assets/wave1.svg" alt="">
+  </div>
 </div>
 </template>
 
@@ -160,7 +163,7 @@ h1{
     border-radius: 0px 7px;
 }
 .section-container{
-    background-color: #fcfcfc;
+    background-color: #fbf4f4;
 }
 // button
 .star-now-button{
@@ -182,5 +185,10 @@ h1{
     text-decoration: none;
     color: #ffffff;
     font-weight: bolder;
+}
+.wave{
+    width: 100%;
+    height: 71px;
+    filter: invert(87%) sepia(261%) saturate(1429%) hue-rotate(312deg) brightness(244%) contrast(159%);
 }
 </style>
