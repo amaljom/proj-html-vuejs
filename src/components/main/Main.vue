@@ -11,6 +11,8 @@
     <LatestCourses />
     <!-- section with two components with images -->
     <LearnSection />
+    <!-- section with upcming events -->
+    <upcomingEvents />
   </div>
 </template>
 
@@ -20,13 +22,15 @@ import ConstructCareer from './ConstructCareer'
 import ResultsObtained from './ResultsObtained'
 import LatestCourses from './LatestCourses'
 import LearnSection from './LearnSection'
+import UpcomingEvents from './UpcomingEvents'
 export default {
     components:{
         BuildYourTeam,
         ConstructCareer,
         ResultsObtained,
         LatestCourses,
-        LearnSection
+        LearnSection,
+        UpcomingEvents
     }
 }
 </script>
