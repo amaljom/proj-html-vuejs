@@ -1,5 +1,6 @@
 <template>
-  <div class="card-contenitore mt-5 pt-4 ">
+<div class="section-container">
+  <div class="card-contenitore pt-5">
     <div class="text-center">
         <p class="color-special">CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
     </div>
@@ -39,7 +40,11 @@
             </div>
         </div>
     </div>
+    <div class="star-now-button">
+        <a @click.prevent href="">View all courses&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -153,5 +158,29 @@ h1{
     color: white;
     font-weight: bold;
     border-radius: 0px 7px;
+}
+.section-container{
+    background-color: #fcfcfc;
+}
+// button
+.star-now-button{
+    padding: 10px;
+    background-color: #20ad96;
+    margin: 0 auto;
+    widows: 80%;
+    transition-duration: 0.3s;
+    border-radius: 7px;
+    width: 20%;
+    text-align: center;
+    &:hover{
+        background-color: #3f3a64;
+    }
+
+}
+    
+.star-now-button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
 }
 </style>
