@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import"../assets/style/Variable.scss";
 .bg-result-container{
   background-color: #faf8f6;

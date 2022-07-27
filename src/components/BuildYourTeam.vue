@@ -1,7 +1,7 @@
 <template>
   <div class="card-contenitore mt-5 pt-3 text-center">
     <div>
-        <p>START LEARNING CODING LANGUAGES</p>
+        <p class="color-special">START LEARNING CODING LANGUAGES</p>
     </div>
     <div class="d-flex justify-content-center">
         <h1 class="font-w-h1">Build your dream&nbsp;</h1>
@@ -57,9 +57,11 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="scss" scoped>
 @import"../assets/style/Variable.scss";
-
+.color-special{
+    color:#696b86;
+}
 .card-contenitore{
     width: $windowSize;
     margin: 0 auto;

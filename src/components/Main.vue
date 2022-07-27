@@ -7,6 +7,8 @@
     <ConstructCareer />
     <!-- Section with obtainded results -->
     <ResultsObtained />
+    <!-- Latest courses -->
+    <LatestCourses />
   </div>
 </template>
 
@@ -14,11 +16,13 @@
 import BuildYourTeam from './BuildYourTeam'
 import ConstructCareer from './ConstructCareer'
 import ResultsObtained from './ResultsObtained'
+import LatestCourses from './LatestCourses.vue'
 export default {
     components:{
         BuildYourTeam,
         ConstructCareer,
-        ResultsObtained
+        ResultsObtained,
+        LatestCourses
     }
 }
 </script>
