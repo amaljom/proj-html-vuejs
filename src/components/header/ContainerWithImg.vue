@@ -14,7 +14,7 @@
             <span>Download Free E-book</span>
         </div>
     </div>
-    <div> <img src="../assets/home-5-hero-image.png" alt=""> </div>
+    <div> <img src="../../assets/img/home-5-hero-image.png" alt=""> </div>
   </div>
 </template>
 

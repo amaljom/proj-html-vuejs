@@ -2,7 +2,7 @@
   <header>
         <div class="card-contenitore div-position">
             <div class=" d-flex justify-content-between align-items-center">
-                <div> <img class="w-50" src="../assets/dark-logo.png" alt=""> </div>
+                <div> <img class="w-50" src="../../assets/img/dark-logo.png" alt=""> </div>
                 
                 <div class="d-flex align-items-center">
                     <!-- lista -->
@@ -28,7 +28,7 @@
             <!-- Creazione del component contente la grossa immagine -->
             <ContainerWithImg />
         </div>
-        <div class="img-container"><img class="img-backgorund" src="../assets/jumbo-overlay.svg" alt="Non Trovato"></div>
+        <div class="img-container"><img class="img-backgorund" src="../../assets/img/jumbo-overlay.svg" alt="Non Trovato"></div>
   </header>
 </template>
 
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import"../assets/style/Variable.scss";
+@import"../../assets/style/Variable.scss";
 .card-contenitore{
     width: $windowSize;
     margin: 0 auto;

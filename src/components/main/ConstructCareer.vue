@@ -1,6 +1,6 @@
 <template>
     <div class="card-contenitore d-flex justify-content-between my-5 py-3 background-container">
-        <div class="img-container-background"> <img src="../assets/about-us-03-image-01.png" alt=""> </div>
+        <div class="img-container-background"> <img src="../../assets/img/about-us-03-image-01.png" alt=""> </div>
         
         <div class="container-size">
             <!-- prima del titolo -->
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import"../assets/style/Variable.scss";
+@import"../../assets/style/Variable.scss";
 .card-contenitore{
     width: $windowSize;
     margin: 0 auto;
@@ -82,8 +82,7 @@ img{
     left: 164px;
 }
 .img-container-background{
-    background-image: url(../assets/underlay-shape-lilla.svg);
-    background-image: url(http://192.168.1.73:8080/img/underlay-shape-lilla.37cd3c31.svg);
+    background-image: url(../../assets/img/underlay-shape-lilla.svg);
     background-repeat: no-repeat;
     background-size: 410px;
     background-position-y: bottom;

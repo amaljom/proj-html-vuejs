@@ -1,38 +1,36 @@
 <template>
   <div class="card-contenitore d-flex justify-content-around my-5 py-3 background-container">
-        <div class="img-container-background position-relative">
-             <img src="../assets/home-5-image-02.png" alt=""> 
-             <img class="decoration" src="../assets/maxcoach-shape-07.png" alt="">
-             <img class="decoration2" src="../assets/maxcoach-shape-01.png" alt="">
-             <div class="circle"></div>
-        </div>
         <div class="container-size">
             <!-- prima del titolo -->
-            <span class="color-special">WHAT ARE YOU LOOKING FOR?</span>
+            <span class="color-special">WHY ESITATE TO REGISTER?</span>
             <!-- titolo -->
             <div class="d-flex">
-                <h1>Learn on Your&nbsp;<span class="thinner">Mobile</span></h1>
+                <h1>Learn At Your Own&nbsp;<span class="thinner">Pace</span></h1>
             </div>
-            <h1>Anytime!</h1>
             <div>
-                <p>Save lessons for later and revise or write notes at anu time and on multiple devices on you way.
-                    Never interfere with activities of enjoyment of other precious moments.
-                </p>
+                <ul>
+                    <li class="pb-3" v-for="(benefit, index) in benefits" :key="index"><i class="fa-solid fa-check pe-2"></i> {{ benefit.text}}</li>
+                </ul>
             </div>
             <div class="star-now-button">
                 <a @click.prevent href="">Get started for free</a>
             </div>
+        </div>
+        <div class="img-container-background position-relative">
+             <img src="../../assets/img/home-5-image-01.png" alt=""> 
+             <img class="decoration" src="../../assets/img/maxcoach-shape-05.png" alt="">
         </div>
     </div>
 </template>
 
 <script>
 export default {
+props:['benefits']
 }
 </script>
 
 <style lang="scss" scoped>
-@import"../assets/style/Variable.scss";
+@import"../../assets/style/Variable.scss";
 .color-special{
     color:#696b86;
 }
@@ -54,7 +52,7 @@ h1{
 }
 
 .container-size{
-    width: 39%;
+    width: 33%;
 }
 .button{
     padding: 18px 19px;
@@ -68,42 +66,33 @@ h1{
         }
 }
 img{
-    width: 400px;
+    width: 500px;
     position: relative;
     left: 76px;
-    z-index: 200;
 }
 .decoration{
     width: 200px;
     position: absolute;
-    left: 400px;
+    left: 480px;
     bottom: 50px;
-    z-index: 1;
-}
-.decoration2{
-    position: absolute;
-    width: 29%;
-    left: -20%;
-    bottom: 50%;
-}
-.circle{
-    border: solid 4px #c3c3a7;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 .img-container-background{
-    background-image: url(../assets/underlay-shape-grey.svg);
+    background-image: url(../../assets/img/underlay-shape-grey.svg);
     background-repeat: no-repeat;
     background-size: 450px;
     background-position-y: bottom;
     background-position-x: left;
     width: 597px;
 }
-
+ul li{
+    list-style: none;
+}
+ul{
+    padding-left: 0;
+}
+ul li i{
+    color: #20ad96;
+}
 .star-now-button{
     padding: 10px;
     background-color: #20ad96;

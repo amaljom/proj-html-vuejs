@@ -12,14 +12,14 @@
     <div class="row py-5">
         <div v-for="(card,index) in cards" :key="index" class="card-lesson py-3">
             <div class="w-100 position-relative">
-                <img class="w-100 rounded-top" :src="require(`../assets/${card.img}`)" alt="">
+                <img class="w-100 rounded-top" :src="require(`../../assets/img/${card.img}`)" alt="">
                 <div class="costo position-absolute top-0 end-0"> {{card.price}} </div>
             </div>
             <div class="detail-container">
                 <!-- name and photo -->
                 <div class="d-flex align-items-center">
                     <div class="img-container">
-                        <img class="w-100" :src="require(`../assets/${card.author}`)" alt="">
+                        <img class="w-100" :src="require(`../../assets/img/${card.author}`)" alt="">
                     </div>
                     <span class="px-3">{{card.authorName}}</span>
                 </div>
@@ -45,7 +45,7 @@
     </div>
   </div>
   <div class="w-100">
-    <img class="wave" src="../assets/wave1.svg" alt="">
+    <img class="wave" src="../../assets/img/wave1.svg" alt="">
   </div>
 </div>
 </template>
@@ -116,7 +116,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import"../assets/style/Variable.scss";
+@import"../../assets/style/Variable.scss";
 .card-contenitore{
     width: $windowSize;
     margin: 0 auto;
