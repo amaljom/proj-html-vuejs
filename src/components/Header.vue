@@ -68,8 +68,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import"../assets/style/Variable.scss";
 .card-contenitore{
-    width: 1250px;
+    width: $windowSize;
     margin: 0 auto;
     padding-top: 10px;
 }

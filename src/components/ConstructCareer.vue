@@ -16,7 +16,7 @@
             <div class="outer-box mt-5">
                 <div class="inner-box">
                     <span>Multiple Platforms Supported for Teaching & Studying</span>
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <i class="fa-solid fa-circle-minus"></i>
                 </div>
                 <p>MaxCoach supports the asct of teaching and learning on multiple platforms like online or offline via marterial downloads.
                     We know things aren't supposed to be devoureed in a short time, you can always access our knowledge base from any device.
@@ -43,20 +43,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import"../assets/style/Variable.scss";
 .card-contenitore{
-    width: 1250px;
+    width: $windowSize;
     margin: 0 auto;
     padding-top: 10px;
 }
 
 h1{
-    color: #3f3a64;
+    color: $SectionsTitleColor;
     font-size: 3rem;
     font-weight: bolder;
 }
 .thinner{
     font-size: 3rem;
-    color: #20adad;
+    color: $SectionsTitleColorSecondary;
     font-weight: 200;
 }
 

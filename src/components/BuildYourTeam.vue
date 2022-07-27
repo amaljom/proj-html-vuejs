@@ -58,19 +58,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import"../assets/style/Variable.scss";
+
 .card-contenitore{
-    width: 1250px;
+    width: $windowSize;
     margin: 0 auto;
     padding-top: 10px;
 }
 .font-w-h1{
-    color: #3f3a64;
+    color: $SectionsTitleColor;
     font-size: 3rem;
     font-weight: bolder;
 }
 h1{
     font-size: 3rem;
-    color: #20adad;
+    color: $SectionsTitleColorSecondary;
 }
 h5{
     font-weight: bolder;

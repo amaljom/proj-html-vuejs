@@ -5,16 +5,20 @@
     <BuildYourTeam />
     <!-- ConstructCareer -->
     <ConstructCareer />
+    <!-- Section with obtainded results -->
+    <ResultsObtained />
   </div>
 </template>
 
 <script>
 import BuildYourTeam from './BuildYourTeam'
 import ConstructCareer from './ConstructCareer'
+import ResultsObtained from './ResultsObtained'
 export default {
     components:{
         BuildYourTeam,
-        ConstructCareer
+        ConstructCareer,
+        ResultsObtained
     }
 }
 </script>
