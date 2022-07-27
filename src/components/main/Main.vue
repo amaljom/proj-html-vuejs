@@ -12,7 +12,9 @@
     <!-- section with two components with images -->
     <LearnSection />
     <!-- section with upcming events -->
-    <upcomingEvents />
+    <UpcomingEvents />
+    <!-- team introduction -->
+    <TeamIntro />
   </div>
 </template>
 
@@ -23,6 +25,7 @@ import ResultsObtained from './ResultsObtained'
 import LatestCourses from './LatestCourses'
 import LearnSection from './LearnSection'
 import UpcomingEvents from './UpcomingEvents'
+import TeamIntro from './TeamIntro'
 export default {
     components:{
         BuildYourTeam,
@@ -30,7 +33,8 @@ export default {
         ResultsObtained,
         LatestCourses,
         LearnSection,
-        UpcomingEvents
+        UpcomingEvents,
+        TeamIntro
     }
 }
 </script>

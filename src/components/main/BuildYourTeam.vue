@@ -10,7 +10,7 @@
     <!-- inserisco i 4 component dinamicamente -->
     <div class="d-flex justify-content-around my-5">
         <div class="px-3" v-for="(element, index) in elements" :key="index">
-            <img :src="require(`../../assets/${element.img}`)" alt="">
+            <img :src="require(`../../assets/img/${element.img}`)" alt="">
             <h5>{{ element.name }}</h5>
             <p> {{element.info}} </p>
             <div class="star-now-button">

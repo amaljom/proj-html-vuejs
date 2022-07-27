@@ -1,39 +1,42 @@
 <template>
-<div class="card-contenitore pt-5">
-    <div class="text-center">
-        <span class="color-special">GET IN CONTACT NOW</span>
-        <!-- title -->
-        <div class="d-flex justify-content-center">
-            <h1>Upcoming&nbsp;<span class="thinner">Events</span></h1>
+<div>
+    <div class="card-contenitore pt-5">
+        <div class="text-center">
+            <span class="color-special">GET IN CONTACT NOW</span>
+            <!-- title -->
+            <div class="d-flex justify-content-center">
+                <h1>Upcoming&nbsp;<span class="thinner">Events</span></h1>
+            </div>
         </div>
-    </div>
-    <!-- card container -->
-    <div class="row py-5">
-        <div v-for="(card,index) in cards" :key="index" class="card-item">
-            <!-- left -->
-            <div>
-                <div class="pb-2">
-                    <i class="fa-solid fa-location-dot pe-2"></i>
-                    <span>{{card.place}}</span>
-                </div>
+        <!-- card container -->
+        <div class="row py-5">
+            <div v-for="(card,index) in cards" :key="index" class="card-item">
+                <!-- left -->
                 <div>
-                    <span class="special-font-weigth">{{card.info}}</span>
+                    <div class="pb-2">
+                        <i class="fa-solid fa-location-dot pe-2"></i>
+                        <span>{{card.place}}</span>
+                    </div>
+                    <div>
+                        <span class="special-font-weigth">{{card.info}}</span>
+                    </div>
                 </div>
-            </div>
-            <!-- right -->
-            <div class="text-center">
-                <h1 class="thinner">{{card.date}}</h1>
-                <span class="m-0 special-font-weigth">{{card.month}}</span>
-                <div class="star-now-button">
-                    <a @click.prevent :href="`${card.url}`">Get started for free</a>
+                <!-- right -->
+                <div class="text-center">
+                    <h1 class="thinner">{{card.date}}</h1>
+                    <span class="m-0 special-font-weigth">{{card.month}}</span>
+                    <div class="star-now-button">
+                        <a @click.prevent :href="`${card.url}`">Get started for free</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="text-center color-special">
+            <span>Exited about our events?&nbsp;</span>
+            <span><a @click.prevent href="#">View all events</a></span>
+        </div>
     </div>
-    <div class="text-center color-special">
-        <span>Exited about our events?&nbsp;</span>
-        <span><a @click.prevent href="#">View all events</a></span>
-    </div>
+    <img class="wave" src="../../assets/img/wave2.svg" alt="">
 </div>
 </template>
 
@@ -149,5 +152,12 @@ h1{
 .color-special a{
     font-weight: bold;
     color: #20ad96;
+}
+
+.wave{
+    transform: scaleY(-1);
+    width: 100%;
+    height: 310px;
+    filter: invert(44%) sepia(194%) saturate(1351%) hue-rotate(316deg) brightness(334%) contrast(91%);
 }
 </style>
