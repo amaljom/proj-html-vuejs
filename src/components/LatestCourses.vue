@@ -8,32 +8,32 @@
         <h1>Courses</h1>
     </div>
     <!-- A DIV TO CONTAIN ALL CARDS -->
-    <div>
-        <div class="card-lesson">
+    <div class="row py-5">
+        <div v-for="(card,index) in cards" :key="index" class="card-lesson">
             <div class="w-100 position-relative">
-                <img class="w-100 rounded-top" src="../assets/course-02-480x298.jpg" alt="">
-                <div class="costo position-absolute top-0 end-0">Free</div>
+                <img class="w-100 rounded-top" :src="require(`../assets/${card.img}`)" alt="">
+                <div class="costo position-absolute top-0 end-0"> {{card.price}} </div>
             </div>
             <div class="detail-container">
                 <!-- name and photo -->
                 <div class="d-flex align-items-center">
                     <div class="img-container">
-                        <img class="w-100" src="../assets/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
+                        <img class="w-100" :src="require(`../assets/${card.author}`)" alt="">
                     </div>
-                    <span class="px-3">name</span>
+                    <span class="px-3">{{card.authorName}}</span>
                 </div>
                 <!-- rest of the content -->
 
-                <p class="author">Learning to write as a professional author</p>
+                <p class="author">{{card.info}}</p>
 
                 <div class="d-flex">
                     <div>
                         <span><i class="fa-solid fa-file-lines"></i>&nbsp;</span>
-                        <span>20 Lessons&nbsp;</span>
+                        <span>{{card.lessons}} Lessons&nbsp;</span>
                     </div>
                     <div class="ps-4">
                         <span><i class="fa-solid fa-user"></i>&nbsp;</span>
-                        <span>50 Students&nbsp;</span>
+                        <span>{{card.completedStudents}} Students&nbsp;</span>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,66 @@
 
 <script>
 export default {
-
+    data: function(){
+        return{
+            cards:[
+                {
+                    img:'course-02-480x298.jpg',
+                    price:'$40.00',
+                    author:'73ee246daf47502812ccefc84bf02898 (1).jpeg',
+                    authorName:'Balanche Fields',
+                    info:'Learning to write as a professional author',
+                    lessons:20,
+                    completedStudents:50
+                },
+                {
+                    img:'stock-full-hd-03-480x298.jpg',
+                    price:'Free',
+                    author:'d0d504142acfde820eef2f11feea6253 (1).jpeg',
+                    authorName:'Maggie Strickland',
+                    info:'Customer-centric info-Tech Strategies',
+                    lessons:24,
+                    completedStudents:749
+                },
+                {
+                    img:'stock-full-hd-04-480x298.jpg',
+                    price:'$19.00',
+                    author:'d0d504142acfde820eef2f11feea6253 (1).jpeg',
+                    authorName:'Maggie Stricklan',
+                    info:'Open Programming Courses for Everyone: Python',
+                    lessons:17,
+                    completedStudents:62
+                },
+                {
+                    img:'stock-full-hd-06-480x298.jpg',
+                    price:'$26.00',
+                    author:'73ee246daf47502812ccefc84bf02898 (1).jpeg',
+                    authorName:'Balanche Fields',
+                    info:'Academic Listening and Note-taking',
+                    lessons:14,
+                    completedStudents:67
+                },
+                {
+                    img:'course-featured-image-01-480x298.jpg',
+                    price:'$39.00',
+                    author:'73ee246daf47502812ccefc84bf02898 (1).jpeg',
+                    authorName:'Balanche Fields',
+                    info:'Master jQuery in a Short Perio of Time',
+                    lessons:6,
+                    completedStudents:51
+                },
+                {
+                    img:'stock-full-hd-05-480x298.jpg',
+                    price:'$59.00',
+                    author:'73ee246daf47502812ccefc84bf02898 (1).jpeg',
+                    authorName:'Balanche Fields',
+                    info:'Introduction to Javascript for Beginners',
+                    lessons:14,
+                    completedStudents:76
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -70,7 +129,7 @@ h1{
 
 // card
 .card-lesson{
-    width: 30%;
+    width: calc( 100% / 3);
     border-radius: 7px;
 }
 .img-container{
@@ -81,9 +140,10 @@ h1{
 }
 .author{
     font-size: 1.3rem;
+    font-weight: bold;
 }
 .detail-container{
-    padding: 20px 30px;
+    padding: 20px 45px;
 }
 .costo{
     width: 80px;
