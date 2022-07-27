@@ -12,24 +12,26 @@
         <div class="card-lesson">
             <div class="w-100 position-relative">
                 <img class="w-100 rounded-top" src="../assets/course-02-480x298.jpg" alt="">
-                <div class="btn btn-primary position-absolute top-0 end-0">Free</div>
+                <div class="costo position-absolute top-0 end-0">Free</div>
             </div>
-            <div>
+            <div class="detail-container">
                 <!-- name and photo -->
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <div class="img-container">
                         <img class="w-100" src="../assets/73ee246daf47502812ccefc84bf02898 (1).jpeg" alt="">
                     </div>
-                    <p>name</p>
+                    <span class="px-3">name</span>
                 </div>
                 <!-- rest of the content -->
-                <p>Learning to write as a professional author</p>
+
+                <p class="author">Learning to write as a professional author</p>
+
                 <div class="d-flex">
                     <div>
                         <span><i class="fa-solid fa-file-lines"></i>&nbsp;</span>
                         <span>20 Lessons&nbsp;</span>
                     </div>
-                    <div>
+                    <div class="ps-4">
                         <span><i class="fa-solid fa-user"></i>&nbsp;</span>
                         <span>50 Students&nbsp;</span>
                     </div>
@@ -76,5 +78,20 @@ h1{
 }
 .img-container img{
     border-radius: 50%;
+}
+.author{
+    font-size: 1.3rem;
+}
+.detail-container{
+    padding: 20px 30px;
+}
+.costo{
+    width: 80px;
+    background-color: rgb(84, 122, 84);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 7px;
 }
 </style>
