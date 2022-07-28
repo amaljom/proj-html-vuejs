@@ -155,9 +155,15 @@ export default {
     methods:{
         nextTree(){
             this.n++;
+            if(this.n>2){
+                this.n=0
+            }
         },
         prevTree(){
             this.n--;
+            if(this.n<0){
+                this.n=2
+            }
         },
         condition(index){
             if(index===this.n){
