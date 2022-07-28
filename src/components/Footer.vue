@@ -115,15 +115,15 @@ ul li{
     padding: 8px 0px;
     font-weight: bold;
 }
-a, i, {
+a, i {
     text-decoration: none;
-    color: #969696;
+    color: $FooterTextColor;
     &:hover{
         color: black;
     }
 }
 .rights{
-    color: #969696;
+    color: $FooterTextColor;
     text-align: center;
     padding: 40px 0px;
 }

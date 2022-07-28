@@ -60,7 +60,7 @@ export default {
 <style scoped lang="scss" scoped>
 @import"../../assets/style/Variable.scss";
 .color-special{
-    color:#696b86;
+    color:$ElementOverTitles;
 }
 .card-contenitore{
     width: $windowSize;

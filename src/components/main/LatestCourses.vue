@@ -124,7 +124,7 @@ export default {
     padding-top: 10px;
 }
 .color-special{
-    color:#696b86;
+    color:$ElementOverTitles;
 }
 .font-w-h1{
     color: $SectionsTitleColor;

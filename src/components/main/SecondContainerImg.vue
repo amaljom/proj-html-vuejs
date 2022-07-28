@@ -45,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 @import"../../assets/style/Variable.scss";
 .color-special{
-    color:#696b86;
+    color:$ElementOverTitles;
 }
 .card-contenitore{
     width: $windowSize;
@@ -116,19 +116,9 @@ img{
 }
 
 .star-now-button{
-    padding: 10px;
-    background-color: #20ad96;
-    text-align: center;
-    transition-duration: 0.3s;
-    border-radius: 7px;
     width: 60%;
     &:hover{
         background-color: #3f3a64;
     }
-}
-.star-now-button a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bolder;
 }
 </style>

@@ -4,8 +4,8 @@
         
         <div class="container-size">
             <!-- prima del titolo -->
-            <span>DREAM WITH&nbsp;</span>
-            <span>MAXCOACH</span>
+            <span class="color">DREAM WITH&nbsp;</span>
+            <span class="fw-bold color">MAXCOACH</span>
             <!-- titolo -->
             <div class="d-flex">
                 <h1>Construct A&nbsp;</h1>
@@ -49,7 +49,9 @@ export default {
     margin: 0 auto;
     padding-top: 10px;
 }
-
+.color{
+    color:$ElementOverTitles;
+}
 h1{
     color: $SectionsTitleColor;
     font-size: 3rem;
