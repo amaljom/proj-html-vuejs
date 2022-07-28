@@ -21,18 +21,18 @@
                     <div class="img-container">
                         <img class="w-100" :src="require(`../../assets/img/${card.author}`)" alt="">
                     </div>
-                    <span class="px-3">{{card.authorName}}</span>
+                    <span class="px-3 color-special">{{card.authorName}}</span>
                 </div>
                 <!-- rest of the content -->
 
                 <p class="author">{{card.info}}</p>
 
                 <div class="d-flex">
-                    <div>
+                    <div class="color-special">
                         <span><i class="fa-solid fa-file-lines"></i>&nbsp;</span>
-                        <span>{{card.lessons}} Lessons&nbsp;</span>
+                        <span >{{card.lessons}} Lessons&nbsp;</span>
                     </div>
-                    <div class="ps-4">
+                    <div class="ps-4 color-special">
                         <span><i class="fa-solid fa-user"></i>&nbsp;</span>
                         <span>{{card.completedStudents}} Students&nbsp;</span>
                     </div>

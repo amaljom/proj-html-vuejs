@@ -13,7 +13,7 @@
             <div v-for="(card,index) in cards" :key="index" class="card-item">
                 <!-- left -->
                 <div>
-                    <div class="pb-2">
+                    <div class="pb-2 color-special">
                         <i class="fa-solid fa-location-dot pe-2"></i>
                         <span>{{card.place}}</span>
                     </div>
