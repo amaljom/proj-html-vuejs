@@ -27,6 +27,12 @@
             </div>
             <!-- Creazione del component contente la grossa immagine -->
             <ContainerWithImg />
+            <div class="icons-div">
+                <i class="py-2 fa-solid fa-cart-shopping"></i>
+                <i class="py-2 fa-solid fa-life-ring"></i>
+                <i class="py-2 fa-solid fa-book"></i>
+                <i class="py-2 fa-solid fa-cart-shopping"></i>
+            </div>
         </div>
         <div class="img-container"><img class="img-backgorund" src="../../assets/img/jumbo-overlay.svg" alt="Non Trovato"></div>
   </header>
@@ -115,5 +121,17 @@ ul li{
     transform: scaleY(-1);
     position: absolute;
     bottom: 0;
+}
+.icons-div{
+        display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    width: 39px;
+    align-items: center;
+    position: absolute;
+    right: -326px;
+    top: 165px;
+    border-radius: 5px;
 }
 </style>

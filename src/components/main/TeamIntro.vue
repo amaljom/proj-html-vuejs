@@ -51,7 +51,7 @@ export default {
                     profession:'/ Private Tutor'
                 }
                 
-            ]
+            ],
         }
     }
 }
