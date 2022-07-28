@@ -10,7 +10,7 @@
     </div>
     <!-- A DIV TO CONTAIN ALL CARDS -->
     <div class="row py-5">
-        <div v-for="(card,index) in cards" :key="index" class="card-lesson py-3">
+        <div v-for="(card,index) in cards" :key="index" class="card-lesson p-0 m-2">
             <div class="w-100 position-relative">
                 <img class="w-100 rounded-top" :src="require(`../../assets/img/${card.img}`)" alt="">
                 <div class="costo position-absolute top-0 end-0"> {{card.price}} </div>
@@ -138,7 +138,7 @@ h1{
 
 // card
 .card-lesson{
-    width: calc( 100% / 3);
+    width: calc(( 100% / 3) - 16px);
     border-radius: 7px;
     transition-duration: .4s;
     &:hover{
