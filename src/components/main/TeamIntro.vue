@@ -50,12 +50,16 @@
                     <span> {{ person.profession}} </span>
                 </div>
             </div>
-
-            <div class="d-flex justify-content-around">
-                <div @click="prevTree()" class="btn btn-danger">
+            <div class="d-flex justify-content-center">
+                <div @click="changeN(index)" v-for="(element, index) in dots" :key="index" class="m-3" :class="condition(index) ? 'text-danger' : 'text-dark' ">
+                        <i :class="`fa-solid ${element.dot}`"></i>
+                </div>  
+            </div>
+            <div class="d-flex justify-content-around pt-5">
+                <div @click="prevTree()" class="btn btn-success">
                     <i class="fa-solid fa-arrow-left"></i>
                 </div>
-                <div @click="nextTree()" class="btn btn-danger">
+                <div @click="nextTree()" class="btn btn-success">
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
@@ -67,6 +71,18 @@
 export default {
     data:function(){
         return{
+            
+            dots:[
+                {
+                    dot:'fa-circle'
+                },
+                {
+                    dot:'fa-circle'
+                },
+                {
+                    dot:'fa-circle'
+                }
+            ],
             people:{
                 first:[
                     {
@@ -142,6 +158,14 @@ export default {
         },
         prevTree(){
             this.n--;
+        },
+        condition(index){
+            if(index===this.n){
+                return true
+            }
+        },
+        changeN(i){
+            this.n=i;
         }
     }
 }
