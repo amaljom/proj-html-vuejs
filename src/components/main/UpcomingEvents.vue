@@ -25,9 +25,9 @@
                 <div class="text-center">
                     <h1 class="thinner">{{card.date}}</h1>
                     <span class="m-0 special-font-weigth">{{card.month}}</span>
-                    <div class="star-now-button">
-                        <a @click.prevent :href="`${card.url}`">Get started for free</a>
-                    </div>
+                    <ButtonComponent 
+                    :url="card.url"
+                    :buttonText="buttonTxt" />
                 </div>
             </div>
         </div>
@@ -41,7 +41,11 @@
 </template>
 
 <script>
+import ButtonComponent from './ButtonComponent'
 export default {
+    components:{
+        ButtonComponent
+    },
     data:function(){
         return{
             cards:[
@@ -88,7 +92,8 @@ export default {
                     url:'#'
                 }
 
-            ]
+            ],
+            buttonTxt:"Get Ticket"
         }
     }
 }
@@ -114,23 +119,6 @@ h1{
     color: $SectionsTitleColorSecondary;
     font-weight: 200;
 }
-.star-now-button{
-    padding: 10px;
-    background-color: #20ad96;
-    text-align: center;
-    transition-duration: 0.3s;
-    border-radius: 7px;
-    &:hover{
-        background-color: #3f3a64;
-    }
-}
-.star-now-button a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bolder;
-}
-
-
 .card-item{
     display: flex;
     background-color: #fafafa;

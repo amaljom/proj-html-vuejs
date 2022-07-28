@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    
     <div class="star-now-button">
         <a @click.prevent href="">View all courses&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
     </div>

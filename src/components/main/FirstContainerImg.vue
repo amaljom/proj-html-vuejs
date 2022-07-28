@@ -12,9 +12,9 @@
                     <li class="pb-3" v-for="(benefit, index) in benefits" :key="index"><i class="fa-solid fa-check pe-2"></i> {{ benefit.text}}</li>
                 </ul>
             </div>
-            <div class="star-now-button">
-                <a @click.prevent href="">Get started for free</a>
-            </div>
+            <ButtonComponent 
+                :url="url"
+                :buttonText="buttonTxt" />
         </div>
         <div class="img-container-background position-relative">
              <img src="../../assets/img/home-5-image-01.png" alt=""> 
@@ -24,9 +24,23 @@
 </template>
 
 <script>
+import ButtonComponent from './ButtonComponent'
 export default {
-props:['benefits']
+    components:{
+        ButtonComponent
+    },
+    data:function(){
+        return{
+            // BUTTON
+            buttonTxt:"Get started for free",
+            url:'#'
+        }
+    },
+    props:['benefits']
+
 }
+    
+
 </script>
 
 <style lang="scss" scoped>

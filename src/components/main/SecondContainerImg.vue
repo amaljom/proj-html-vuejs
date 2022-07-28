@@ -19,15 +19,26 @@
                     Never interfere with activities of enjoyment of other precious moments.
                 </p>
             </div>
-            <div class="star-now-button">
-                <a @click.prevent href="">Get started for free</a>
-            </div>
+            <ButtonComponent 
+                :url="url"
+                :buttonText="buttonTxt" />
         </div>
     </div>
 </template>
 
 <script>
+import ButtonComponent from './ButtonComponent'
 export default {
+    components:{
+        ButtonComponent
+    },
+    data:function(){
+        return{
+            // BUTTON
+            buttonTxt:"Download our App",
+            url:'#'
+        }
+    },
 }
 </script>
 

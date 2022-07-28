@@ -3,10 +3,9 @@
         <div class="card-contenitore text-center">
             <h1>Start today for getting&nbsp;<span class="thinner">Online Certification</span></h1>
             <h1 class="Bigger-h1">You can be your own guiding star with our help</h1>
-
-            <div class="star-now-button">
-                <a @click.prevent href="">Get started now</a>
-            </div>
+            <ButtonComponent 
+                :url="UrlGetStarted"
+                :buttonText="buttonTxt" />
             <div>
                 <img class="decoration-1" src="../../assets/img/maxcoach-shape-01.png" alt="">
             </div>
@@ -19,8 +18,18 @@
 </template>
 
 <script>
+import ButtonComponent from './ButtonComponent'
 export default {
-
+    components:{
+        ButtonComponent
+    },
+    data:function(){
+        // data for button
+        return{
+            UrlGetStarted:'#',
+            buttonTxt:'Get started now'
+        }
+    }
 }
 </script>
 

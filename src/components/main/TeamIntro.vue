@@ -2,10 +2,10 @@
     <div class="background">
         <div class="card-contenitore pt-5">
             <div class="text-center py-5">
-                <span class="color-special">GET IN CONTACT NOW</span>
+                <span class="color-special">PEOPLE ARE PRISING MAXCOACH</span>
                 <!-- title -->
                 <div class="d-flex justify-content-center">
-                    <h1>Upcoming&nbsp;<span class="thinner">Events</span></h1>
+                    <h1>what make they&nbsp;<span class="thinner">love us?</span></h1>
                 </div>
             </div>
             <div class="pt-5 mt-5 row justify-content-around ">
