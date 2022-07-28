@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <div @click="changeN(index)" v-for="(element, index) in dots" :key="index" class="m-3" :class="condition(index) ? 'text-danger' : 'text-dark' ">
+                <div @click="changeN(index)" v-for="(element, index) in dots" :key="index" class="m-3" :class="condition(index) ? 'color-dots fs-5' : 'text-dark' ">
                         <i :class="`fa-solid ${element.dot}`"></i>
                 </div>  
             </div>
@@ -181,6 +181,9 @@ export default {
 @import"../../assets/style/Variable.scss";
 .color-special{
     color:$ElementOverTitles;
+}
+.color-dots{
+    color: $SectionsTitleColor;
 }
 .card-contenitore{
     width: $windowSize;
