@@ -1,6 +1,6 @@
 <template>
   <header>
-        <div class="card-contenitore div-position">
+        <div class="card-contenitore div-position" id="ancora">
             <div class=" d-flex justify-content-between align-items-center">
                 <div> <img class="w-50" src="../../assets/img/dark-logo.png" alt=""> </div>
                 

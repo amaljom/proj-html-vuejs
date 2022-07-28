@@ -37,6 +37,9 @@
             </div>
     </div>
     <div> <p class="fw-bold rights">2020 MaxCoach.All Rigts Reserved</p></div>
+    <div>
+       <a href="#ancora"> <i class="fa-solid fa-arrow-up anchor"></i></a> 
+    </div>
 </div>
 </template>
 
@@ -129,5 +132,16 @@ a, i {
 }
 .special-padding{
     padding-top: 50px;
+}
+.anchor{
+    font-size: 2rem;
+    padding: 10px;
+    position: relative;
+    left: 95%;
+    bottom: 57px;
+    background: rgb(192, 192, 138);
+    border-radius: 42%;
+    width: 44px;
+    height: 51px;
 }
 </style>

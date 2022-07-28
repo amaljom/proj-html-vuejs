@@ -1,5 +1,5 @@
 <template>
-    <div class="card-contenitore d-flex justify-content-between my-5 py-3 background-container">
+    <div class="card-contenitore d-flex justify-content-between my-5 py-3 background-container" >
         <div class="img-container-background"> <img src="../../assets/img/about-us-03-image-01.png" alt=""> </div>
         
         <div class="container-size">

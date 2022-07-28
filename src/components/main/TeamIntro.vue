@@ -50,6 +50,7 @@ export default {
                     name:'LUVIC DUBBLE',
                     profession:'/ Private Tutor'
                 }
+                
             ]
         }
     }
